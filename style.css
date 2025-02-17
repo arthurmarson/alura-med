@@ -1,5 +1,7 @@
 @import url(styles/header.css);
 @import url(styles/consultas.css);
+@import url(styles/footer.css);
+@import url(styles/botao-flutuante.css);
 
 :root {
     --cor-fundo: #FFFFFF;
@@ -9,6 +11,7 @@
     --cor-texto-botao: #FFFFFF;
     --cor-fundo-botao-video: #FFB050;
     --cor-fundo-botao-endereco: #4894FF;
+    --cor-terciaria-geral: #4894FF;
     --cor-texto-botao-transparente: #464646;
     --cor-borda-botao-transparente: #dbdbdb;
     --fonte-principal: 'Montserrat', serif;

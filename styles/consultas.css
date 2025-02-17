@@ -1,10 +1,10 @@
-main {
-    margin: 0 1rem;
+.consultas-container {
+    margin: 1rem 1rem 4rem 1rem;
 }
 
 .data-container {
     padding: 0.5rem 0;
-    margin-bottom: 1rem;
+    margin: 1rem 1rem;
 }
 
 .data-container__texto {

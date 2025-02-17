@@ -1,0 +1,113 @@
+.botao-flutuante {
+    position: relative;
+}
+
+.botao-flutuante__plus {
+    position: fixed;
+    right: 17px;
+    bottom: 80px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    filter: drop-shadow(0 3px 6px #4894FF90);
+    z-index: 3;
+    border: none;
+    background-color: var(--cor-terciaria-geral);
+    cursor: pointer;
+}
+
+.botao-flutuante__plus span {
+    background-image: url(../assets/icons/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.botao-flutuante__lista {
+    position: fixed;
+    right: 17px;
+    bottom: 30%;
+    display: none; /*Ao clicar no Plus, display:flex*/
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+/* Overlay escurece o fundo quando ativo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 2;
+}
+
+/* Exibir os botões flutuantes e overlay quando ativos */
+.botao-flutuante__lista.ativo {
+    display: flex;
+    z-index: 3;
+}
+
+.overlay.ativo {
+    display: block;
+}
+
+.botao-flutuante__lista li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.botao-flutuante__lista .botao-flutuante__tipo-consulta {
+    font-size: 0.75rem;
+    background-color: var(--cor-fundo);
+    border-radius: 9px;
+    padding: 4px 8px;
+}
+
+.botao-flutuante__lista .botao-flutuante-item {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    filter: drop-shadow(0 3px 6px #4894FF90);
+    z-index: 3;
+    border: none;
+    background-color: var(--cor-terciaria-geral);
+    cursor: pointer;
+
+}
+
+.botao-flutuante__lista li .botao-flutuante-item .local {
+    background-image: url(../assets/icons/pin-botao.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.botao-flutuante__lista li .botao-flutuante-item .remoto {
+    background-image: url(../assets/icons/camera-botao.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+

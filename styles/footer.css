@@ -1,0 +1,29 @@
+.footer-container-acoes {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-fundo);
+    filter: drop-shadow(0 -1px 3px #46464625);
+}
+
+.footer-container__icones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.5rem 0;
+}
+
+.footer-conteiner__icones__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--cor-fonte-primaria);
+}
+
+.footer__titulo__consultas {
+    color: var(--cor-terciaria-geral);
+}
