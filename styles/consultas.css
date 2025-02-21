@@ -110,10 +110,6 @@
     text-align: center;
 }
 
-.grid-container__desktop {
-    display: none;
-}	
-
 @media screen and (min-width: 673px) and (max-width: 1439px) {
     .consultas-container {
         display: grid;
