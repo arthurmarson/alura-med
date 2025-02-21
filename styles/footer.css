@@ -13,7 +13,7 @@
     padding: 0.5rem 0;
 }
 
-.footer-conteiner__icones__item {
+.footer-container__icones__item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -4,7 +4,7 @@
 
 .data-container {
     padding: 0.5rem 0;
-    margin: 1rem 1rem;
+    margin: 1rem 0rem;
 }
 
 .data-container__texto {
@@ -108,4 +108,44 @@
     background-color: var(--cor-fundo-botao-endereco);
     width: 100%;
     text-align: center;
+}
+
+.grid-container__desktop {
+    display: none;
+}	
+
+@media screen and (min-width: 673px) and (max-width: 1439px) {
+    .consultas-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .grid-container__tablet:nth-child(1) {
+        grid-column: 1; /* Seção (Hoje) na primeira coluna */
+    }
+
+    .grid-container__tablet:nth-child(2) {
+        grid-column: 1; /* Seção (Amanhã) na primeira coluna */
+    }
+
+    .grid-container__tablet:nth-child(3) {
+        grid-column: 2; /* Seção (Quarta-feira) na segunda coluna */
+        grid-row: 1 / span 2; /* Seção ocupa duas linhas */
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .grid-container__desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 0 2rem;
+        
+    }
+
+    .card-container {
+        width: 400px;
+        margin-bottom: 4rem;
+    }
 }
