@@ -87,8 +87,8 @@
 
 }
 
-.botao-flutuante__lista li .botao-flutuante-item .local {
-    background-image: url(../assets/icons/pin-botao.svg);
+.botao-flutuante__lista li .botao-flutuante-item .local,
+.botao-flutuante__lista li .botao-flutuante-item .remoto {
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
@@ -97,17 +97,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.botao-flutuante__lista li .botao-flutuante-item .local {
+    background-image: url(../assets/icons/pin-botao.svg);
 }
 
 .botao-flutuante__lista li .botao-flutuante-item .remoto {
     background-image: url(../assets/icons/camera-botao.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .botao-flutuante {
+        display: none;
+    }
+}

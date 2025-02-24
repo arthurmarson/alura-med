@@ -56,7 +56,6 @@
                     </a>  
                 </li>
             </ul>
-
         </nav>
     </div>
 
@@ -455,6 +454,41 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="formulario">
+            <h2 class="formulario-titulo">Formulário Para Nova Consulta:</h2>
+            <form class="form-container">
+                <div class="form-container__inputs">
+                    <label class="form-container__titulo-input" for="nome">Nome Completo:</label> <br>
+                    <input required class="nome-input" type="text" id="nome" maxlength="200" placeholder="Digite aqui seu nome" value=""/>
+                </div>
+                <div class="form-container__flexbox">
+                    <div class="form-container__inputs">
+                        <label class="form-container__titulo-input" for="consulta">Qual o tipo de consulta?</label> <br>
+                        <select required class="tipo-consulta-input" id="consulta" name="consulta">
+                            <option value="">---</option>
+                            <option value="">Presencial</option>
+                            <option value="">Remota</option>
+                        </select>
+                    </div>
+                    <div class="form-container__inputs">
+                        <label class="form-container__titulo-input" for="data">Data da consulta:</label> <br>
+                        <input required class="data-input" type="date" id="data" name="data" min="2025-01-01"/>
+                    </div>
+                    <div class="form-container__inputs">
+                        <label class="form-container__titulo-input" for="horario">Horário da consulta:</label> <br>
+                        <input required class="horario-input" type="time" name="horario" id="horario" min="08:00" max="20:00">
+                    </div>
+                </div>
+                <div class="form-container__inputs">
+                    <label class="form-container__titulo-input" for="observacoes">Alguma observação importante?</label> <br>
+                    <input class="observacoes-input" type="textarea" name="observacoes" id="observacoes" maxlength="200" placeholder="Digite aqui suas observações" value=""/>
+                </div>
+                <div class="form-container__inputs">
+                    <input class="submit-button" type="submit" value="Enviar Consulta">
+                </div>
+            </form>
         </section>
 
         <section class="nav-container__footer">

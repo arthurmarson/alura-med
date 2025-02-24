@@ -129,6 +129,17 @@
         grid-column: 2; /* Seção (Quarta-feira) na segunda coluna */
         grid-row: 1 / span 2; /* Seção ocupa duas linhas */
     }
+
+    .botoes {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .botao-video,
+    .botao-audio {
+        width: 11rem;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
@@ -137,11 +148,19 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         margin: 0 2rem;
-        
     }
 
     .card-container {
         width: 400px;
         margin-bottom: 4rem;
+    }
+
+    .botao-video,
+    .botao-audio {
+        width: 9rem;
+        text-align: center;
+    }
+    .consultas-container {
+        margin: 1rem;
     }
 }
